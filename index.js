@@ -4,13 +4,15 @@ const app = express()
 require('dotenv').config()
 
 // MIDDLEWARE
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine())
 // Places Controller
 app.use('/places', require('./controllers/places'))
 
 // ROUTES
 // Homepage route
 app.get('/', (req, res) => {
-    res.send('Rest-rant')
+    res.render('home')
 })
 
 // Error Route
