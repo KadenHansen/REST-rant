@@ -6,6 +6,8 @@ Rest-Rant is a mock social media app, where users can add restaurants that they 
 
 **Stack:** MongoDB, Express, NodeJS
 
+**Server-Side Rendering:** JSX
+
 **Node Modules:** method-override, dotenv, express-react-views
 
 ## Routes Wireframe
