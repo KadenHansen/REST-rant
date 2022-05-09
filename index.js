@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 // Error Route
 app.get('*', (req, res) => {
-    res.status(404).send('Error 404 Page')
+    res.status(404).render('error404')
 })
 
 // LISTEN
