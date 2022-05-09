@@ -7,8 +7,14 @@ require('dotenv').config()
 
 
 // ROUTES & CONTROLLERS
+// Homepage route
 app.get('/', (req, res) => {
     res.send('Rest-rant')
+})
+
+// Error Route
+app.get('*', (req, res) => {
+    res.status(404).send('Error 404 Page')
 })
 
 // LISTEN
