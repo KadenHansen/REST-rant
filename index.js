@@ -4,9 +4,10 @@ const app = express()
 require('dotenv').config()
 
 // MIDDLEWARE
+// Places Controller
+app.use('/places', require('./controllers/places'))
 
-
-// ROUTES & CONTROLLERS
+// ROUTES
 // Homepage route
 app.get('/', (req, res) => {
     res.send('Rest-rant')
